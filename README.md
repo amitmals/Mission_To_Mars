@@ -1,5 +1,7 @@
 # Mission_To_Mars
 
+<img src = "https://ucsd.bootcampcontent.com/UCSD-Coding-Bootcamp/UCSDSAN201904DATA2/raw/master/02-Homework/12-Web-Scraping-and-Document-Databases/Instructions/Images/mission_to_mars.png">
+
 ## Website
 Beautifully arranged website using Bootstrap and containers. There is button on the top that will Scrape the data for you.
 Below is an initial look at the website.
