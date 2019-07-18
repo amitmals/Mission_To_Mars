@@ -1,7 +1,9 @@
-# Mission_To_Mars
+# Mission To Mars
 
 <img src = "https://user-images.githubusercontent.com/46534353/61434415-bee4f380-a8ea-11e9-9800-dae345d7a627.PNG">
 
+Scraped the following websites:
+1. <a href="https://mars.nasa.gov/news/">NASA Mars News Site</a>
 ## Website
 Beautifully arranged website using Bootstrap and containers. There is button on the top that will Scrape the data for you.
 Below is an initial look at the website.
