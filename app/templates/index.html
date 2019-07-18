@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Mission to Mars</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!--<link rel="stylesheet" href="../assets/stylesheet.css">-->
+
+</head>
+
+<body>
+    
+    <div class="container">
+
+        <div class="jumbotron text-center" style="background-color: black; color: white";>
+            <h1>Mission to Mars</h1>
+            <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Click to Scrape New Data</a></p>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12" style="background-color:lightgoldenrodyellow; margin-top: 10px; border-style: outset;">
+                <div class ="panel panel-default">
+                    <div class="panel-body">
+                        <br>
+                        <h2>Latest Mars News</h2>
+                        <h4>{{mars.news_title}}</h4>
+                        <p>{{mars.news_paragraph}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" style= "margin-top: 20px">
+            <div class="col-sm-8" style="background-color: white;">
+                <div class ="panel panel-default">
+                    <div class="panel-body">
+                        <br>
+                        <h2>Featured Mars Image</h2>
+                        <img src="{{mars.featured_image}}" alt="Featured_Mars_Image" class="img-fluid"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4" style="background-color: white;">
+                <div class="row">
+                    <div class ="panel panel-default">
+                        <div class="panel-body">
+                            <br>
+                            <h3>Current Weather on Mars</h3>
+                            <p>{{mars.weather}}</p>
+                        </div>
+                    </div>
+                    <div class ="panel panel-default">
+                        <div class="panel-body">
+                            <br>
+                            <h3>Mars Facts</h3>
+                            <table style="width:100%">
+                                {{mars.facts_html | safe}}
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12" style="background-color: black; color: white; margin-top: 50px">
+                <h2>Mars Hemispheres</h2>
+            </div>
+            {% for hemisphere in mars.hemisphere_image_urls %}
+                <div class="col-md-6" style="background-color: lightgrey;">
+                    <div class ="panel panel-default">
+                        <div class="panel-body">
+                            <br>
+                            <img src="{{hemisphere.img_url}}" alt="Featured_Mars_Image" class="img-fluid"></a>
+                            <h5>{{hemisphere.title}}</h5>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}         
+        </div>
+
+    </div>
+</body>
