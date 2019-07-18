@@ -8,7 +8,7 @@ Below is an initial look at the website.
 #### Want to see what happens after the data is Scraped...Scroll below....
 
 BEFORE
-<src="https://user-images.githubusercontent.com/46534353/61419649-fe441d80-a8b3-11e9-982a-01b0379937ba.png">
+<img src="https://user-images.githubusercontent.com/46534353/61419649-fe441d80-a8b3-11e9-982a-01b0379937ba.png">
 
 AFTER
-<src="https://user-images.githubusercontent.com/46534353/61419659-09974900-a8b4-11e9-8f6b-71891c5c304e.png">
+<img src="https://user-images.githubusercontent.com/46534353/61419659-09974900-a8b4-11e9-8f6b-71891c5c304e.png">
